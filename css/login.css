@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+	background: url(../img/login.png);
+}
+
+
+.login-form {
+	margin: 0 auto;
+    margin-top: 10%;
+    max-width: 526px;
+    max-height: 361px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.input-login-form {
+	/* max-width: 210px; */
+	max-height: 31;
+	width: 208px;
+	height: 29px;
+	outline-style: none;
+	background-color: #FCFAFA;
+	box-shadow: none;
+}
+
+
+.login-label {
+	padding-right: 10px;
+	color: rgba(0, 0, 0, 0.7);
+	font: 400 14px / 36px Oxygen;
+}
+
+.background-logo {
+	display: inline-block;
+	margin-top: 71px;
+	padding-bottom: 60px;
+	width: 200px;
+	height: 46px;
+	background: url(../img/LOGO-login.png) no-repeat;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.lologin {
+	margin-left: 31px;
+}
+
+input:focus {
+	border-color: rgba(244, 162, 44, 0.5);
+}
+
+.logged-in {
+	margin: -18px 0 10px;
+	color: rgba(0, 0, 0, 0.7);
+	font: 400 14px / 36px Oxygen;
+}
+
+input[type="checkbox"] {
+	background-color: #ffffff;
+}
+
+.form-logged {
+    padding-top: 9px;
+}
+
+#log-in-btn {
+    height: 60px;
+    border-radius: 0px;
+    background-color: #702412;
+    color: #ffffff;
+    font: 600 18px / 18px OpenSans;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+}
+    
+
+
+

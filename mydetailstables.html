@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>my details | my jobs</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="fontawsome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/combobox.css"/>
+  <link rel="stylesheet" href="css/maindesign.css"/>
+  <link rel="stylesheet" href="css/maindash.css"/>
+  <link rel="stylesheet" href="css/mydet-myjobs.css"/>
+  <link rel="stylesheet" href="css/explorejob.css"/>
+  
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  
+</head>
+<body> 
+  <nav class="topnav">
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-6"><a href="#">
+              <p class="logo">Retail Boss</p></a></div>
+          <div class="col-xs-6 alignright">
+            <div class="user"><a href="#"><img src="img/userdemo.jpg" alt="userdemo" class="img-responsive"/>
+                <p>username  <span class="fa fa-caret-down"></span></p></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="pagecontent">
+    <div class="content clearfix">
+      <nav class="navleft">
+        <ul>
+          <li>
+            <select id="companies">
+              <option value="company name (branch)">company name (branch)</option>
+              <option value="Samsung">Samsung</option>
+              <option value="LG">LG</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="Eboda">Eboda</option>
+              <option value="ORION">ORION</option>
+              <option value="Sony">Sony</option>
+              <option value="Canon">Canon</option>
+              <option value="Kingstone">Kingstone</option>
+            </select>
+          </li>
+          <li><a href="#" class="home">HOME</a></li>
+          <li><a href="#" class="graph">MANAGE <br> STAFF
+              <div class="fa fa-caret-down"></div></a></li>
+          <ul id="drop1" class="dropdown" style="display:none;">
+            <li><a href="#">scheduling</a></li>
+            <li><a href="#" class="active">payroll</a></li>
+            <li><a href="#">staff details</a></li>
+            <li><a href="#">messages</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="speaker">HIRE<br> STAFF
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop2" style="display:none" class="dropdown">
+            <li><a href="#">hourly wage staff(part time)</a></li>
+            <li><a href="#">monthly wage staff(full time)</a></li>
+            <li><a href="#">messages</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="rectangle">COMPANYNAME<br> DETAILS
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop3" style="display:none" class="dropdown">
+            <li><a href="#">common calendar</a></li>
+            <li><a href="#">announcements</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="active news-paper">MY DETAILS
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop4" style="display:block" class="dropdown">
+            <li><a href="#">my profile</a></li>
+            <li><a href="#">work schedule</a></li>
+            <li><a href="#" class="active">my jobs</a></li>
+            <li><a href="#">messages</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="graph-1">ADMIN
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop5" style="display:none" class="dropdown">
+            <li><a href="#">user permissions</a></li>
+            <li><a href="#">report to work settings</a></li>
+            <li><a href="#">company settings</a></li>
+            <li><a href="#">sms</a></li>
+          </ul><!-- end of hidden ul-->
+        </ul><!-- end of main ul-->
+      </nav><!-- end of navleft bar-->
+      
+       <section class="mydetails firstsection clearfix" style="" id="first_mydet_section">
+        <div class="db__heading">
+            <h3 class="mydetails">my details | my jobs</h3>
+        </div>
+        
+        <button class="btn_exp_job_postings" id="btn_explore_job_postings">Explore Job Postings</button>
+        
+        <table class="table_job_applications">
+            <tr>
+                <th><div>Job Applications</div></th>
+                <th><div>Hiring Status</div></th>
+                <th><div>Messages</div></th>
+                <th><div>Action</div></th>
+            </tr>
+            <tr>
+            <td>Job 1</td>
+            <td>Hired</td>
+            <td><button class="btn_intable_message">Message</button></td>
+            <td><button class="btn_intable_withdraw">Withdraw</button></td>
+            </tr>
+              <tr>
+            <td>Job 1</td>
+            <td>Hired</td>
+            <td><button class="btn_intable_message">Message</button></td>
+            <td><button class="btn_intable_withdraw">Withdraw</button></td>
+            </tr>
+              <tr>
+            <td>Job 1</td>
+            <td>Hired</td>
+            <td><button class="btn_intable_message">Message</button></td>
+            <td><button class="btn_intable_withdraw">Withdraw</button></td>
+            </tr>
+        </table>
+        
+        
+        <table class="table_job_completed">
+            <tr>
+            <th><div>Jobs Completed</div></th>
+                <th><div>Time In</div></th>
+                <th><div>Time Out</div></th>
+                <th><div>Pay earned</div></th>
+                <th><div>Job status</div></th>
+                <th><div>Action</div></th>
+            </tr>
+            <tr>
+                <td>Job 1</td>
+                <td>HH:MM</td>
+                <td>HH:MM</td>
+                <td>$102</td>
+                <td>Active</td>
+                <td><button class="btn_intable_apply">Apply</button></td>
+            </tr>
+            <tr>
+                <td>Job 1</td>
+                <td>HH:MM</td>
+                <td>HH:MM</td>
+                <td>$102</td>
+                <td>Active</td>
+                <td><button class="btn_intable_apply">Apply</button></td>
+            </tr>
+            <tr>
+                <td>Job 1</td>
+                <td>HH:MM</td>
+                <td>HH:MM</td>
+                <td>$102</td>
+                <td>Active</td>
+                <td><button class="btn_intable_apply">Apply</button></td>
+            </tr>
+        </table>
+        
+       
+        
+        
+           
+      </section><!-- end of section mydetails stuff-->
+    
+
+		<section class="mydetails secondsection clearfix" style="display:none;" id="second_mydet_section">
+        <div class="db__heading">
+            <h3 class="mydetails">my details | my jobs | explore job postings</h3>
+        </div>
+        
+        
+        <table class="table_explore_job table-hover">
+            <tr>
+                <th><div>Date<br> Posted</div></th>
+                <th><div>Company</div></th>
+                <th><div>Position</div></th>
+                <th><div>Start<br> Date</div></th>
+                <th><div>End<br> Date</div></th>
+                <th><div>Start<br> time</div></th>
+                <th><div>End<br> time</div></th>
+                <th><div>Hourly<br> Rate</div></th>
+                <th><div>Monthly<br> Rate</div></th>
+                <th><div>&nbsp;</div></th>
+                <th><div>&nbsp;</div></th>
+            </tr>
+            
+            <tr>
+            <td>11.12.14</td>
+            <td>ABCD</td>
+            <td>Temp Staff</td>
+            <td>$150</td>
+            <td>11.12.14</td>
+            <td>15:30</td>
+            <td>17:30</td>
+            <td>10</td>
+            <td>15</td>
+            <td><button class="btn_intable_eye"></button></td>
+            <td><button class="btn_intable_done_arrow"></button></td>
+            </tr>
+            
+            
+            <tr>
+            <td>11.12.14</td>
+            <td>ABCD</td>
+            <td>Temp Staff</td>
+            <td>$150</td>
+            <td>11.12.14</td>
+            <td>15:30</td>
+            <td>17:30</td>
+            <td>10</td>
+            <td>15</td>
+            <td><button class="btn_intable_eye"></button></td>
+            <td><button class="btn_intable_done_arrow"></button></td>
+            </tr>
+            
+            
+            <tr>
+            <td>11.12.14</td>
+            <td>ABCD</td>
+            <td>Temp Staff</td>
+            <td>$150</td>
+            <td>11.12.14</td>
+            <td>15:30</td>
+            <td>17:30</td>
+            <td>10</td>
+            <td>15</td>
+            <td><button class="btn_intable_eye"></button></td>
+            <td><button class="btn_intable_done_arrow"></button></td>
+            </tr>
+            
+            
+            <tr>
+            <td>11.12.14</td>
+            <td>ABCD</td>
+            <td>Temp Staff</td>
+            <td>$150</td>
+            <td>11.12.14</td>
+            <td>15:30</td>
+            <td>17:30</td>
+            <td>10</td>
+            <td>15</td>
+            <td><button class="btn_intable_eye"></button></td>
+            <td><button class="btn_intable_done_arrow"></button></td>
+            </tr>
+            
+            
+            <tr>
+            <td>11.12.14</td>
+            <td>ABCD</td>
+            <td>Temp Staff</td>
+            <td>$150</td>
+            <td>11.12.14</td>
+            <td>15:30</td>
+            <td>17:30</td>
+            <td>10</td>
+            <td>15</td>
+            <td><button class="btn_intable_eye"></button></td>
+            <td><button class="btn_intable_done_arrow"></button></td>
+            </tr>
+          
+          
+        </table>
+        
+        
+        
+        
+       
+        
+        
+           
+      </section><!-- end of section mydetails stuff-->
+      
+
+      
+
+      
+      
+    </div><!-- end of  content-->
+  </div><!-- end of section.pagecontent  -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/combobox.js"></script>
+  <script src="js/mainscript.js"></script>
+  <script src="js/payroll.js"></script>
+  <script>
+  
+  $("#btn_explore_job_postings").click(function() {
+  $(".firstsection").hide();
+  $(".secondsection").show();
+  });
+    
+  </script>
+  
+ 
+  
+</body>

@@ -1,0 +1,477 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+/* --------------------------reset css----------------------------------- */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* -----------------fonts and some reset------------------------- */
+body {
+  font-family: 'Oxygen' , sans-serif;
+  background-color: #eee;
+  font-size: 14px;
+  font-weight: lighter; }
+
+.content {
+  width: 1120px;
+  margin: 0 auto; }
+  .content input {
+    border: 1px solid #dedede;
+    background-color: #f6f6f6;
+    padding: 10px 34px 10px 12px;
+    font-size: 14px; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none;
+    outline: none; }
+  a:visited {
+    text-decoration: none; }
+
+button {
+  border: none; }
+
+.alignright {
+  text-align: right; }
+
+.alignleft {
+  text-align: left; }
+
+/* ----------------------------------date picker design------------------- */
+#ui-datepicker-div {
+  display: none; }
+
+.ui-datepicker {
+  background-color: #fff;
+  padding: 25px 10px 10px 10px;
+  border: 1px solid #c1c1c1; }
+  .ui-datepicker .ui-datepicker-header {
+    position: relative;
+    text-align: center; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px;
+      background: url("../img/dateleft.png") no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      left: 0px;
+      top: -5px;
+      cursor: pointer; }
+      .ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover {
+        background: url("../img/datelefthover.png") no-repeat;
+        background-size: 100% 100%; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px;
+      background: url("../img/dateright.png") no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      right: 0;
+      top: -5px;
+      cursor: pointer; }
+      .ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover {
+        background: url("../img/daterighthover.png") no-repeat;
+        background-size: 100% 100%; }
+    .ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+      color: #737373;
+      margin-bottom: 26px;
+      margin-top: 14px; }
+  .ui-datepicker table th {
+    display: none; }
+  .ui-datepicker table tr td {
+    padding: 8px;
+    text-align: center; }
+    .ui-datepicker table tr td:hover {
+      background-color: #e5e5e5; }
+    .ui-datepicker table tr td.ui-datepicker-current-day {
+      background-color: #f6b556; }
+      .ui-datepicker table tr td.ui-datepicker-current-day a {
+        color: #fff;
+        font-weight: bolder; }
+    .ui-datepicker table tr td a {
+      color: #737373; }
+
+/* ------------------------content css------------------- */
+.topnav {
+  margin: 25px 0; }
+  .topnav .logo {
+    text-indent: -9999px;
+    width: 200px;
+    height: 47px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% 100%; }
+  .topnav .user {
+    font-size: 14px;
+    margin-top: 15px; }
+    .topnav .user a {
+      position: relative;
+      color: #c5c5c5;
+      display: inline-block; }
+      .topnav .user a span.fa {
+        margin-left: 5px; }
+      .topnav .user a:hover {
+        color: #737373; }
+    .topnav .user img {
+      border-radius: 100px;
+      position: absolute;
+      top: -29px;
+      left: -87px; }
+
+/* --------------------------page content style -------------- */
+/* ----------------------left-nav bar style------------------------*/
+.pagecontent .navleft {
+  font-size: 18px;
+  width: 23.21429%;
+  float: left; }
+  .pagecontent .navleft ul {
+    background-color: #fff; }
+    .pagecontent .navleft ul input.branch {
+      width: 100%;
+      background-image: url("../img/inputbranch.png");
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      background-size: 32px 100%;
+      background-origin: margin-box;
+      cursor: pointer; }
+    .pagecontent .navleft ul li:nth-child(1) {
+      padding: 10px 20px; }
+    .pagecontent .navleft ul li {
+      padding: 30px 20px;
+      border-bottom: 1px solid #ececec; }
+      .pagecontent .navleft ul li a {
+        color: #737373;
+        padding: 10px 0 10px 60px;
+        display: block;
+        position: relative; }
+      .pagecontent .navleft ul li a.home {
+        background-image: url("../img/house.gif");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        .pagecontent .navleft ul li a.home:hover {
+          color: #f4a22c;
+          background-image: url("../img/househover.gif"); }
+        .pagecontent .navleft ul li a.home.active {
+          color: #f4a22c;
+          background-image: url("../img/househover.gif"); }
+      .pagecontent .navleft ul li a.graph {
+        background-image: url("../img/graph.gif");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        .pagecontent .navleft ul li a.graph:hover {
+          color: #f4a22c;
+          background-image: url("../img/graphhover.gif"); }
+        .pagecontent .navleft ul li a.graph.active {
+          color: #f4a22c;
+          background-image: url("../img/graphhover.gif"); }
+      .pagecontent .navleft ul li a.speaker {
+        background-image: url("../img/speaker.gif");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        .pagecontent .navleft ul li a.speaker:hover {
+          color: #f4a22c;
+          background-image: url("../img/speakerhover.gif"); }
+        .pagecontent .navleft ul li a.speaker.active {
+          color: #f4a22c;
+          background-image: url("../img/speakerhover.gif"); }
+      .pagecontent .navleft ul li a.rectangle {
+        background-image: url("../img/rectangle.gif");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        .pagecontent .navleft ul li a.rectangle:hover {
+          color: #f4a22c;
+          background-image: url("../img/rectanglehover.gif"); }
+        .pagecontent .navleft ul li a.rectangle.active {
+          color: #f4a22c;
+          background-image: url("../img/rectanglehover.gif"); }
+      .pagecontent .navleft ul li a.news-paper {
+        background-image: url("../img/news-paper.gif");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        .pagecontent .navleft ul li a.news-paper:hover {
+          color: #f4a22c;
+          background-image: url("../img/news-paperhover.gif"); }
+        .pagecontent .navleft ul li a.news-paper.active {
+          color: #f4a22c;
+          background-image: url("../img/news-paperhover.gif"); }
+      .pagecontent .navleft ul li a.graph-1 {
+        background-image: url("../img/graph-1.gif");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        .pagecontent .navleft ul li a.graph-1:hover {
+          color: #f4a22c;
+          background-image: url("../img/graph-1hover.gif"); }
+        .pagecontent .navleft ul li a.graph-1.active {
+          color: #f4a22c;
+          background-image: url("../img/graph-1hover.gif"); }
+      .pagecontent .navleft ul li .fa {
+        position: absolute;
+        right: 0;
+        top: 45%; }
+    .pagecontent .navleft ul ul.dropdown li {
+      padding: 0; }
+      .pagecontent .navleft ul ul.dropdown li a:hover {
+        background-color: #eee;
+        border-left: 5px solid #f4a22c;
+        box-sizing: border-box;
+        padding-left: 55px; }
+.pagecontent section.managestaff {
+  /*------------------right section--------------------------- */
+  background-color: #fff;
+  float: right;
+  width: 75.89286%;
+  font-weight: normal;
+  /*-------------------------tabel design------------------------------ */ }
+  .pagecontent section.managestaff h3 {
+    font-size: 30px;
+    color: #f4a22c;
+    font-weight: lighter; }
+  .pagecontent section.managestaff h3.manageheader {
+    font-size: 30px;
+    color: #f4a22c;
+    padding: 20px 0 20px 70px;
+    background: url("../img/graphhover.gif") no-repeat;
+    background-position: 2.82353% 50%;
+    background-size: 30px 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-weight: lighter; }
+  .pagecontent section.managestaff .pickdate {
+    margin: 30px 0 30px 30px;
+    color: #737373; }
+    .pagecontent section.managestaff .pickdate p {
+      margin: 16px; }
+    .pagecontent section.managestaff .pickdate input.date {
+      font-weight: lighter;
+      max-width: 130px;
+      margin: 0 20px;
+      background-image: url("../img/inputdate.png");
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      background-size: 32px 100%;
+      background-origin: margin-box;
+      cursor: pointer; }
+    .pagecontent section.managestaff .pickdate input.emploeyy {
+      font-weight: lighter;
+      width: 225px;
+      margin: 0 20px;
+      background-image: url("../img/inputemployee.png");
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      background-size: 32px 100%;
+      background-origin: margin-box;
+      cursor: pointer; }
+  .pagecontent section.managestaff button.addstaff {
+    /* -----------------------button bottom---------------- */
+    padding: 10px 20px;
+    background-color: #8d5041;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0 35px 20px; }
+  .pagecontent section.managestaff button.export {
+    padding: 10px 20px;
+    background-color: #debc8d;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 20px 35px 20px;
+    float: right; }
+  .pagecontent section.managestaff table {
+    text-align: left; }
+    .pagecontent section.managestaff table tr:nth-child(1) {
+      color: #c5c5c5; }
+    .pagecontent section.managestaff table tr {
+      color: #737373; }
+      .pagecontent section.managestaff table tr td:nth-child(1) {
+        border-left: none; }
+      .pagecontent section.managestaff table tr td:last-child {
+        border-right: none; }
+      .pagecontent section.managestaff table tr td {
+        border: 1px solid #eee; }
+        .pagecontent section.managestaff table tr td .edit {
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: url("../img/pencil.png") no-repeat;
+          background-position: center center;
+          background-size: 100% 100%;
+          cursor: pointer; }
+          .pagecontent section.managestaff table tr td .edit:hover {
+            background: url("../img/pencilhover.png") no-repeat;
+            background-position: center center;
+            background-size: 100% 100%; }
+        .pagecontent section.managestaff table tr td .delete {
+          display: block;
+          width: 30px;
+          height: 30px;
+          background: url("../img/delete.png") no-repeat;
+          background-position: center center;
+          background-size: 100% 100%;
+          cursor: pointer; }
+          .pagecontent section.managestaff table tr td .delete:hover {
+            background: url("../img/deletehover.png") no-repeat;
+            background-position: center center;
+            background-size: 100% 100%; }
+      .pagecontent section.managestaff table tr.gray {
+        background-color: #fbfbfb; }
+
+/* ----------------------------------stuf details page--------------------------------- */
+.userpage {
+  padding: 0 30px 0 30px;
+  margin-bottom: 60px;
+  /* userpage close */ }
+  .userpage .leftside {
+    width: 266px;
+    float: left;
+    /* left side closing */ }
+    .userpage .leftside .userprofile h3 {
+      font-size: 30px;
+      color: #f4a22c;
+      padding: 20px 0 20px 0px;
+      font-weight: lighter; }
+    .userpage .leftside .userprofile img {
+      width: 100%; }
+    .userpage .leftside .userprofile button.sentmessage {
+      width: 100%;
+      height: 45px;
+      background: url("../img/messagebutton.png") no-repeat;
+      background-position: 50px 15px;
+      background-color: #bcbcbc;
+      font-weight: bolder;
+      color: #fff;
+      margin-top: 1px; }
+  .userpage .rightside {
+    width: 485px;
+    float: right;
+    margin-top: 80px;
+    /* right side close */ }
+    .userpage .rightside h3 {
+      border-bottom: 1px solid #eee;
+      padding: 14px 0 14px 0px;
+      font-weight: lighter; }
+    .userpage .rightside .userinfo {
+      /* user info closed */ }
+      .userpage .rightside .userinfo .col-1 {
+        width: 250px;
+        float: left;
+        /* col-1 close */ }
+        .userpage .rightside .userinfo .col-1 table {
+          color: #737373; }
+          .userpage .rightside .userinfo .col-1 table tr:nth-child(1) td {
+            border: none;
+            color: #737373; }
+          .userpage .rightside .userinfo .col-1 table tr:nth-child(2) td {
+            border: none; }
+          .userpage .rightside .userinfo .col-1 table tr td {
+            width: 36%;
+            padding-left: 0;
+            border-right: none;
+            border-left: none; }
+      .userpage .rightside .userinfo .col-2 {
+        width: 214px;
+        float: right;
+        /* col 2 close */ }
+        .userpage .rightside .userinfo .col-2 table {
+          color: #737373; }
+          .userpage .rightside .userinfo .col-2 table tr:nth-child(1) td {
+            border: none;
+            color: #737373; }
+          .userpage .rightside .userinfo .col-2 table tr td {
+            border-right: none;
+            border-left: none; }
+    .userpage .rightside .interview {
+      /* interview close */ }
+      .userpage .rightside .interview .interview-panel {
+        color: #737373;
+        font-size: 14px;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #eee;
+        /* interview-panel */ }
+        .userpage .rightside .interview .interview-panel .interview-question {
+          margin-bottom: 15px; }
+          .userpage .rightside .interview .interview-panel .interview-question .question-nr {
+            color: #a3a3a3;
+            float: left;
+            width: 120px; }
+          .userpage .rightside .interview .interview-panel .interview-question .question {
+            font-weight: lighter;
+            float: left;
+            width: 345px; }
+        .userpage .rightside .interview .interview-panel .interview-answer .answer-nr {
+          color: #a3a3a3;
+          float: left;
+          width: 120px; }
+        .userpage .rightside .interview .interview-panel .interview-answer .answer {
+          font-weight: lighter;
+          float: left;
+          width: 345px; }
+      .userpage .rightside .interview .interview-panel:last-child {
+        border: none; }
+    .userpage .rightside .comments {
+      /* comments section close */ }
+      .userpage .rightside .comments p.comment {
+        margin-top: 20px;
+        margin-bottom: 30px; }
+      .userpage .rightside .comments button {
+        padding: 12px 55px;
+        border-radius: 5px;
+        margin-right: 10px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px; }
+      .userpage .rightside .comments button.hire {
+        background: url("../img/hire.png") no-repeat;
+        background-position: 25px 10px;
+        background-color: #91a981; }
+      .userpage .rightside .comments button.reject {
+        background: url("../img/reject.png") no-repeat;
+        background-color: #ffadad;
+        background-position: 22px 15px; }
+
+/*
+
+
+
+						made by Claudiu Rafael: ;					
+
+
+
+
+
+
+
+																	 */
+
+/*# sourceMappingURL=payroll.css.map */

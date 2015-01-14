@@ -1,0 +1,332 @@
+
+
+table.dash_calendar_table tr td {
+	width: 120px;
+	height: 99px;
+ }
+
+.fc-day-number {
+	position: absolute;
+	top: 2%;
+	left: 7%;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 700;
+	font-size: 14px;
+ }
+
+.fc-day {position: relative;}
+
+td.cal-pending {
+	background: url(../img/pending-confirmation-unhover1.png) no-repeat;
+	background-color: rgba(190, 190, 190, 0.2);
+	background-size: 120px 99px;
+ }
+
+	td.cal-pending:hover {
+		background: url(../img/cal-pending-hover.png) no-repeat;
+	background-color: rgba(190, 190, 190, 0.2);
+	background-size: 120px 99px;
+        cursor: pointer;
+	 }
+
+td.cal-urgent {
+	background: url(../img/urgent.png) no-repeat;
+	background-color: rgba(190, 190, 190, 0.2);
+	background-size: 120px 99px;
+ }
+
+	td.cal-urgent:hover {
+		background: url(../img/urgen-hover.png) no-repeat;
+		background-size: 120px 99px;
+		cursor: pointer;
+	 }
+
+td.cal-available {
+	background: url(../img/cal-available-unhover.png) no-repeat;
+	background-color: rgba(190, 190, 190, 0.2);
+	background-size: 120px 99px;
+ }
+
+td.cal-na {
+	background: url(../img/na.png) no-repeat;
+	background-color: rgba(190, 190, 190, 0.2);
+	background-size: 120px 99px;
+ }
+
+#year {
+	margin: 0;
+	margin-left: 24px;
+	padding: 0;
+	width: 85px;
+	height: 31px;
+	outline: none;
+	background-image: url("../img/inputbranch.png");
+	background-position: 100% 0;
+	background-origin: margin-box;
+	background-size: 32px 100%;
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.7);
+	text-align: left;
+	cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ }
+
+#month {
+	margin: 0;
+	margin-left: 40px;
+	padding: 0;
+	width: 128px;
+	height: 31px;
+	outline: none;
+	background-image: url("../img/inputbranch.png");
+	background-position: 100% 0;
+	background-origin: margin-box;
+	background-size: 32px 100%;
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.7);
+	text-align: left;
+	cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ }
+
+.numChoice {
+	margin: 0;
+	padding: 0;
+	width: 73px;
+	height: 31px;
+	outline: none;
+	background-image: url("../img/inputbranch.png");
+	background-position: 100% 0;
+	background-origin: margin-box;
+	background-size: 32px 100%;
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.7);
+	text-align: left;
+	cursor: pointer;
+ }
+
+.fromToInput {
+	margin: 0;
+	padding: 0;
+	width: 131px;
+	height: 31px;
+	outline: none;
+	background-image: url("../img/inputbranch.png");
+	background-position: 100% 0;
+	background-origin: margin-box;
+	background-size: 32px 100%;
+	background-repeat: no-repeat;
+	color: rgba(0, 0, 0, 0.7);
+	text-align: left;
+	cursor: pointer;
+ }
+
+.cur_addButton {
+	position: absolute;
+	left: 30%;
+	margin-top: 38px;
+	width: 129px;
+	height: 39px;
+	background-color: #702412;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 18px;
+ }
+
+h4.footerHeading {
+	margin-top: 47px;
+	padding-left: 24px;
+	color: #f4a22c;
+    font: 300 30px / 36px OpenSans;
+	font-weight: 300;
+	font-size: 24px;
+    font-family: OpenSans;
+ }
+
+.pagecontent section.managestaff table tr:nth-child(1) {color: rgba(0, 0, 0, 0.7);}
+
+.addBtnPlace {
+	position: relative;
+	height: 108px;
+ }
+
+.formWrapper {
+	position: relative;
+	height: 214px;
+ }
+
+	.formWrapper table {
+		margin-top: 30px;
+		margin-left: 28px;
+		width: 100%;
+		border-color: transparent;
+	 }
+
+.WhiteSpaceBetween {height: 15px;}
+
+
+
+.numOfEmpCell {
+	vertical-align: middle;
+	text-align: center;
+ }
+
+
+
+.leftArrowMonth {
+	width: 31px;
+	height: 31px;
+	background: url(../img/leftArrowMonth.png) no-repeat;
+ }
+
+	.leftArrowMonth:hover {background: url(../img/leftArrowMonth-unhover.png) no-repeat;}
+
+.rightArrowMonth {
+	width: 31px;
+	height: 31px;
+	background: url(../img/dateright.png) no-repeat;
+ }
+
+.rightArrowMonth:hover {
+    background: url(../img/rightArrowHover.png) no-repeat;
+}
+
+.btn-arrow {
+	position: relative;
+    top: 7px;
+	margin: 0;
+	padding: 0;
+ }
+
+.topMenuPicker {position: relative;}
+
+.pickdate {position: relative;}
+
+.pagecontent section.managestaff h3.myDetailsSchedule {
+	padding: 20px 0 20px 70px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+    background: url("../img/mydetails-active.png") no-repeat;
+	background-position: 2.82353% 50%;
+	background-size: 30px 30px;
+    color: #f4a22c;
+    font: 300 30px / 36px;
+	font-size: 30px;
+ }
+
+.fc-day-content {
+	position: relative;
+	margin-left: 22px;
+	background-color: rgba(205, 205, 205, 0.8);
+ }
+
+.event {
+	position:absolute;
+    left: 5px;
+    padding-top: 3px;
+    padding-left: 10px;
+    width: 97px;
+    height: 18px;
+    background-color: rgba(205, 205, 205, 0.8);
+	color: #ffffff;
+    vertical-align: middle;
+    text-align: left;
+	font-weight: 700;
+	font-size: 11px;
+ }
+
+
+
+
+#example-fullcalendar {margin-bottom: 164px;}
+
+#rightArrowCal {margin-left: 4px;}
+
+.fa-caret-down:before {
+content: "\f0d7";
+}
+
+select {
+    padding-left: 32px;
+    background-color: #eeeeee;
+    color: rgba(0, 0, 0, 0.7);
+    font: 400 14px / 36px Oxygen;
+}
+#example-fullcalendar > div > div > table > tbody > tr:nth-child(1) {
+    border:none;
+}
+
+#example-fullcalendar > div > div > table > tbody > tr:nth-child(2) {
+    border: none;
+}
+
+
+select#month {
+    display: inline-block;
+    margin: 0;
+    padding-left:15px;
+    outline:none;
+    border:none;
+    color:#888;
+    cursor:pointer;
+}
+label.forMonthSelection {position:relative}
+
+label.forMonthSelection:after {
+    position:absolute;top:2px;
+    right:8px; 
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    color: rgba(0, 0, 0, 0.7);
+    color:#aaa;
+    font: 400 14px / 36px Oxygen;
+    pointer-events:none;
+}
+label.forMonthSelection:before {
+    position:absolute;top:0px;
+    right:6px; 
+    display:block;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    color: rgba(0, 0, 0, 0.7);
+    font: 400 14px / 36px Oxygen;
+    pointer-events:none;
+}
+
+
+select#year {
+    display: inline-block;
+    margin: 0;
+    margin-left: 21px;
+    padding-left:7px;
+    outline:none;
+    border:none;
+    color:#888;
+    cursor:pointer;
+}
+label.forYearSelection {position:relative}
+
+label.forYearSelection:after {
+    position:absolute;top:2px;
+    right:8px; 
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    color: rgba(0, 0, 0, 0.7);
+    color:#aaa;
+    font: 400 14px / 36px Oxygen;
+    pointer-events:none;
+}
+label.forYearSelection:before {
+    position:absolute;top:0px;
+    right:6px; 
+    display:block;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    color: rgba(0, 0, 0, 0.7);
+    font: 400 14px / 36px Oxygen;
+    pointer-events:none;
+}

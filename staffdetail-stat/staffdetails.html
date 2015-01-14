@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>my details | work schedule</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawsome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/combobox.css" />
+    <link rel="stylesheet" href="css/maindesign.css" />
+    <link rel="stylesheet" href="css/maindash.css" />
+    <link rel="stylesheet" href="css/table-details.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    
+    
+    
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <nav class="topnav">
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <p class="logo">Retail Boss</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 alignright">
+                        <div class="user">
+                            <a href="#"><img src="img/userdemo.jpg" alt="userdemo" class="img-responsive" />
+                                <p>username <span class="fa fa-caret-down"></span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="pagecontent">
+        <div class="content clearfix">
+            <nav class="navleft">
+                <ul>
+                    <li>
+                        <select id="companies">
+                            <option value="company name (branch)">company name (branch)</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="LG">LG</option>
+                            <option value="Lenovo">Lenovo</option>
+                            <option value="Eboda">Eboda</option>
+                            <option value="ORION">ORION</option>
+                            <option value="Sony">Sony</option>
+                            <option value="Canon">Canon</option>
+                            <option value="Kingstone">Kingstone</option>
+                        </select>
+                    </li>
+                    <li><a href="#" class="home">HOME</a>
+                    </li>
+                    <li><a href="#" class="graph">MANAGE <br> STAFF
+              <div class="fa fa-caret-right"></div></a>
+                    </li>
+                    <ul id="drop1" style="display:none" class="dropdown">
+                        <li><a href="#">scheduling</a>
+                        </li>
+                        <li><a href="#">payroll</a>
+                        </li>
+                        <li><a href="#">staff details</a>
+                        </li>
+                        <li><a href="#">messages</a>
+                        </li>
+                    </ul>
+                    <!-- end of hidden ul-->
+                    <li><a href="#" class="speaker">HIRE<br> STAFF
+              <div class="fa fa-caret-right"></div></a>
+                    </li>
+                    <ul id="drop2" style="display:none" class="dropdown">
+                        <li><a href="#">hourly wage staff(part time)</a>
+                        </li>
+                        <li><a href="#">monthly wage staff(full time)</a>
+                        </li>
+                        <li><a href="#">messages</a>
+                        </li>
+                    </ul>
+                    <!-- end of hidden ul-->
+                    <li><a href="#" class="rectangle">COMPANYNAME<br> DETAILS
+              <div class="fa fa-caret-right"></div></a>
+                    </li>
+                    <ul id="drop3" style="display:none" class="dropdown">
+                        <li><a href="#">common calendar</a>
+                        </li>
+                        <li><a href="#">announcements</a>
+                        </li>
+                    </ul>
+                    <!-- end of hidden ul-->
+                    <li><a href="#" class="news-paper">MY DETAILS
+              <div class="fa fa-caret-right"></div></a>
+                    </li>
+                    <ul id="drop4" style="display:none" class="dropdown">
+                        <li><a href="#">my profile</a>
+                        </li>
+                        <li><a href="#">work schedule</a>
+                        </li>
+                        <li><a href="#">my jobs</a>
+                        </li>
+                        <li><a href="#">messages</a>
+                        </li>
+                    </ul>
+                    <!-- end of hidden ul-->
+                    <li><a href="#" class="graph-1">ADMIN
+              <div class="fa fa-caret-right"></div></a>
+                    </li>
+                    <ul id="drop5" style="display:none" class="dropdown">
+                        <li><a href="#">user permissions</a>
+                        </li>
+                        <li><a href="#">report to work settings</a>
+                        </li>
+                        <li><a href="#">company settings</a>
+                        </li>
+                        <li><a href="#">sms</a>
+                        </li>
+                    </ul>
+                    <!-- end of hidden ul-->
+                </ul>
+                <!-- end of main ul-->
+            </nav>
+            <!-- end of navleft bar-->
+
+            <section class="mydetails-ws clearfix">
+                <div class="row">
+                   <div class="db__heading">
+                    <h3 class="myDetailsSchedule">manage staff | staff details</h3>
+                </div>
+</div>
+
+                <div class="row row__fix clearfix">
+                    <div class="col-md-12">
+
+                    <div id="tableManageStaff" class="fc fc-ltr" >
+                        <div class="fc-content">
+         <div class="table-responsive">               
+<table class="work-schedule" style="table-layout: fixed;">
+    <tr class="TablesWorkDeatails">
+        <th><div style="width: 168px;">Staff Name</div></th>
+        <th><div style="width: 89px;">Staff Type</div></th>
+        <th><div style="width: 68px;">Position</div></th>
+        <th><div style="width: 67px;">Start Date</div></th>
+        <th><div style="width: 68px;">Status</div></th>
+        <th><div style="width: 68px;">Pay</div></th>
+        <th><div style="width: 87px;">Bank</div></th>
+        <th><div style="width: 89px;">Branch</div></th>
+        <th><div style="width: 56px;"></div></th>
+        <th><div style="width: 56px;"></div></th>
+        <th>Account No.</th>
+        <th>NRJC</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>Nationality</th>
+        <th>Married</th>
+        <th>Children</th>
+        <th>Mobile no.</th>
+        <th>E-mail</th>
+        <th>Address</th>
+        <th>Name</th>
+        <th>Relationship</th>
+        <th>Contact</th>
+    </tr>
+    <tr>
+        <td>ABCD</td>
+        <td>TempStaff</td>
+        <td>$150</td>
+        <td>11.12.2014</td>
+        <td>Status1</td>
+        <td>$150</td>
+        <td>Bank1</td>
+        <td>Branch1</td>
+        <td class="pos__rel"><span class="edit"></span></td>
+        <td class="pos__rel"><span class="deleteIcon"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ABCD</td>
+        <td>TempStaff</td>
+        <td>$150</td>
+        <td>11.12.2014</td>
+        <td>Status1</td>
+        <td>$150</td>
+        <td>Bank1</td>
+        <td>Branch1</td>
+        <td class="pos__rel" ><span class="edit"></span></td>
+        <td class="pos__rel"><span class="deleteIcon"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ABCD</td>
+        <td>TempStaff</td>
+        <td>$150</td>
+        <td>11.12.2014</td>
+        <td>Status1</td>
+        <td>$150</td>
+        <td>Bank1</td>
+        <td>Branch1</td>
+        <td class="pos__rel"><span class="edit"></span></td>
+        <td class="pos__rel"><span class="deleteIcon"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ABCD</td>
+        <td>TempStaff</td>
+        <td>$150</td>
+        <td>11.12.2014</td>
+        <td>Status1</td>
+        <td>$150</td>
+        <td>Bank1</td>
+        <td>Branch1</td>
+        <td class="pos__rel"><span class="edit"></span></td>
+        <td class="pos__rel"><span class="deleteIcon"></span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ABCD</td>
+        <td>TempStaff</td>
+        <td>$150</td>
+        <td>11.12.2014</td>
+        <td>Status1</td>
+        <td>$150</td>
+        <td>Bank1</td>
+        <td>Branch1</td>
+        <td class="pos__rel"><span class="edit"></span></td>
+        <td class="pos__rel"><span class="deleteIcon"></span>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+</table>
+                     </div><!--end of class table-responsive -->
+                    
+                       <button class="AddNewValueInTable">Add New</button>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                </div>
+                
+
+
+
+            </section>
+            <!-- end of section manage stuff-->
+        </div>
+        <!-- end of  content-->
+    </div>
+    <!-- end of section.pagecontent  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/combobox.js"></script>
+    <script src="js/mainscript.js"></script>
+
+
+
+
+</body>
+
+</html>

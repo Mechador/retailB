@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Payroll</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="fontawsome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/combobox.css"/>
+  <link rel="stylesheet" href="css/maindesign.css"/>
+  <link rel="stylesheet" href="css/maindash.css"/><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body> 
+  <nav class="topnav">
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-6"><a href="#">
+              <p class="logo">Retail Boss</p></a></div>
+          <div class="col-xs-6 alignright">
+            <div class="user"><a href="#"><img src="img/userdemo.jpg" alt="userdemo" class="img-responsive"/>
+                <p>username  <span class="fa fa-caret-down"></span></p></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="pagecontent">
+    <div class="content clearfix">
+      <nav class="navleft">
+        <ul>
+          <li>
+            <select id="companies">
+              <option value="company name (branch)">company name (branch)</option>
+              <option value="Samsung">Samsung</option>
+              <option value="LG">LG</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="Eboda">Eboda</option>
+              <option value="ORION">ORION</option>
+              <option value="Sony">Sony</option>
+              <option value="Canon">Canon</option>
+              <option value="Kingstone">Kingstone</option>
+            </select>
+          </li>
+          <li><a href="#" class="home">HOME</a></li>
+          <li><a href="#" class="graph">MANAGE <br> STAFF
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop1" style="display:none" class="dropdown">
+            <li><a href="#">scheduling</a></li>
+            <li><a href="#">payroll</a></li>
+            <li><a href="#">staff details</a></li>
+            <li><a href="#">messages</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="speaker">HIRE<br> STAFF
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop2" style="display:none" class="dropdown">
+            <li><a href="#">hourly wage staff(part time)</a></li>
+            <li><a href="#">monthly wage staff(full time)</a></li>
+            <li><a href="#">messages</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="rectangle">COMPANYNAME<br> DETAILS
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop3" style="display:none" class="dropdown">
+            <li><a href="#">common calendar</a></li>
+            <li><a href="#">announcements</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="news-paper">MY DETAILS
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop4" style="display:none" class="dropdown">
+            <li><a href="#">my profile</a></li>
+            <li><a href="#">work schedule</a></li>
+            <li><a href="#">my jobs</a></li>
+            <li><a href="#">messages</a></li>
+          </ul><!-- end of hidden ul-->
+          <li><a href="#" class="graph-1">ADMIN
+              <div class="fa fa-caret-right"></div></a></li>
+          <ul id="drop5" style="display:none" class="dropdown">
+            <li><a href="#">user permissions</a></li>
+            <li><a href="#">report to work settings</a></li>
+            <li><a href="#">company settings</a></li>
+            <li><a href="#">sms</a></li>
+          </ul><!-- end of hidden ul-->
+        </ul><!-- end of main ul-->
+      </nav><!-- end of navleft bar-->
+      
+       <section class="managestaff clearfix">
+        <div class="db__heading">
+            <h3 class="manageheader">manage staff</h3>
+            <button type="submit" class="section__btn"></button>
+        </div>
+        
+        <div class="row row__fix clearfix">
+           <p class="head-paragraph">number of employees (monthly statistics)</p>
+<!--            <canvas height="321" width="849">-->
+                <img src="img/emp-graph.jpg"  alt="canvas-ins" >
+<!--            </canvas>-->
+        </div>
+        
+        <div class="row row__fix">
+            <div class="col-md-4 round-graph-canvas">
+<!--
+            <canvas width="277" height="380">
+                
+            </canvas>
+            
+-->
+            <img src="img/canvas-ex-1.jpg" width="277" height="380"  alt="">
+            </div>
+            <div class="col-md-4 round-graph-canvas">
+<!--
+            <canvas width="277" height="380">
+                
+            </canvas>
+-->
+           <img src="img/canvas-ex-2.jpg" width="277" height="380"  alt="">
+            </div>
+            <div class="col-md-4 round-graph-canvas">
+<!--
+            <canvas width="277" height="380">
+                
+            </canvas>
+-->
+           <img src="img/canvas-ex-3.jpg" width="277" height="380"  alt="">
+            
+            </div>
+        </div>
+           
+      </section><!-- end of section manage stuff-->
+      
+      
+      <section class="hirestaff clearfix">
+        <div class="db__heading">
+            <h3 class="hirestaff">hire staff</h3>
+            <button type="submit" class="section__btn"></button>
+        </div>
+        
+        <div class="row row__fix">
+            <div class="col-md-6 round-graph-canvas">
+<!--
+            <canvas width="417" height="316">
+                
+            </canvas>
+-->
+            <img src="img/canvas-ex-d-1.jpg" width="417" height="316"  alt="">
+             <button class="post_jobs">post jobs</button>
+            </div>
+            <div class="col-md-6 round-graph-canvas">
+<!--
+            <canvas width="417" height="316">
+                
+            </canvas>
+-->
+            <img src="img/canvas-ex-d-2.jpg" width="417" height="316"  alt="">
+             <button class="post_jobs">post jobs</button>
+            </div>
+          
+        </div>
+           
+      </section><!-- end of section hirestaff-->
+      
+      
+           <section class="mydetails clearfix">
+        <div class="db__heading">
+            <h3 class="mydetails">my details</h3>
+            <button type="submit" class="section__btn"></button>
+        </div>
+        <div class="row row__fix">
+            <p class="mydetails-text">Whohoo! You’re a full-time employee at CompanyName, Inc!</p>
+        </div>
+          
+          <div class="row row__fix">
+          <table class="table" id="table_details">
+              <tr>
+              <td class="border-right">
+              <h4 class="header-mydetails-font">your monthly salary</h4>
+              <p class="month-salary">$1 280</p></td>
+              <td>
+              <h4 class="header-mydetails-font">next payment date</h4>
+             <p class="next-pay" >14.12.2014</p></td></tr>
+              
+             
+          </table>
+     
+          
+          </div>
+           
+      </section><!-- end of section hirestaff-->
+      
+      
+    </div><!-- end of  content-->
+  </div><!-- end of section.pagecontent  -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/combobox.js"></script>
+  <script src="js/mainscript.js"></script>
+</body>

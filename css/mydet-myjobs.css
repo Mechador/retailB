@@ -1,0 +1,159 @@
+.pagecontent section.mydetails {
+background-color: #fff;
+float: right;
+width: 849px;
+font-weight: normal;
+margin-bottom: 20px;
+}
+
+.pagecontent section.mydetails h3.mydetailsheader {
+font-size: 30px;
+color: #f4a22c;
+padding: 20px 0 20px 70px;
+background: url("../img/graphhover.gif") no-repeat;
+background-position: 2.82353% 50%;
+background-size: 30px 30px;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+font-weight: 300;
+}
+.pagecontent section.mydetails h3 {
+font-size: 30px;
+color: #f4a22c;
+font-weight: 300;
+}
+.table_job_applications {
+    margin-bottom: 42px;
+    color: rgba(0, 0, 0, 0.7);
+    font: 400 14px / 14px Oxygen;
+     margin-left: 17px;
+}
+
+table tr, td, th {
+    border: 1px solid #eee;
+}
+.table_job_applications tr th,.table_job_completed tr th {
+    color: rgba(0, 0, 0, 0.33);
+    font: 400 14px / 14px Oxygen;
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+
+.table_job_completed {
+    margin-bottom: 184px;
+    margin-left: 17px;
+    color: rgba(0, 0, 0, 0.7);
+    font: 400 14px / 14px Oxygen;
+}
+
+
+table.table_job_applications > tbody > tr:nth-child(1) > th:nth-child(1) > div  {
+    width: 396px;
+}
+table.table_job_applications > tbody > tr:nth-child(1) > th:nth-child(2) > div {
+    width: 140px;
+}
+table.table_job_applications > tbody > tr:nth-child(1) > th:nth-child(3) > div {
+    width: 142px;
+}
+table.table_job_applications > tbody > tr:nth-child(1) > th:nth-child(4) > div {
+    width: 138px;
+}
+
+
+table.table_job_completed > tbody > tr:nth-child(1) > th:nth-child(1) > div {
+    width: 374px;
+}
+table.table_job_completed > tbody > tr:nth-child(1) > th:nth-child(2) > div {
+    width: 87px;
+}
+table.table_job_completed > tbody > tr:nth-child(1) > th:nth-child(3) > div {
+    width: 90px;
+}
+table.table_job_completed > tbody > tr:nth-child(1) > th:nth-child(4) > div {
+    width: 85px;
+}
+table.table_job_completed > tbody > tr:nth-child(1) > th:nth-child(5) > div {
+    width: 90px;
+}
+body > div > div > section > table.table_job_completed > tbody > tr:nth-child(1) > th:nth-child(6) > div {
+    width: 90px;
+}
+
+table tr td {
+    text-align: center;
+    vertical-align: middle;
+    height: 52px;
+}
+table tr th {
+    text-align: center;
+}
+
+
+body > div > div > section > table.table_job_applications > tbody > tr:nth-child(1) > th:nth-child(1) > div, table.table_job_completed > tbody > tr:nth-child(1) > th:nth-child(1) > div {
+    text-align: left;
+    padding-left: 30px;
+}
+
+table.table_job_applications > tbody > tr:nth-child(2) > td:nth-child(1),
+table.table_job_applications > tbody > tr:nth-child(3) > td:nth-child(1),
+table.table_job_applications > tbody > tr:nth-child(4) > td:nth-child(1),
+table.table_job_completed > tbody > tr:nth-child(2) > td:nth-child(1),
+table.table_job_completed > tbody > tr:nth-child(3) > td:nth-child(1),
+table.table_job_completed > tbody > tr:nth-child(4) > td:nth-child(1){
+    text-align: left;
+    padding-left: 30px;
+}
+
+
+/*buttons*/
+.btn_exp_job_postings {
+    width: 189px;
+    height: 39px;
+    background-color: #702412;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
+    font: 600 18px / 18px OpenSans;
+    border-radius: 5px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-left: 17px;
+}
+
+.btn_intable_message {
+    width: 82px;
+    height: 27px;
+    background-color: #702412;
+    color: #ffffff;
+    font: 400 14px / 14px Oxygen;
+    border-radius: 3px;
+}
+
+.btn_intable_withdraw {
+    width: 82px;
+    height: 27px;
+    border-radius: 3px;
+    background-color: #f4a22c;
+    color: #ffffff;
+    font: 400 14px / 14px Oxygen;
+}
+
+.btn_intable_apply {
+    width: 62px;
+    height: 27px;
+    border-radius: 3px;
+    background-color: #f4a22c;
+    color: #ffffff;
+    font: 400 14px / 14px Oxygen;
+}
+
+.navleft ul ul.dropdown li a.active {
+font-family: 'Oxygen';
+font-weight: 400;
+background-color: #f4f4f4;
+border-left: 5px solid #f4a22c;
+box-sizing: border-box;
+padding-left: 55px;
+}
+
+

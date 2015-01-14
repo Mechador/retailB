@@ -1,0 +1,111 @@
+table.work-schedule tr td {
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.7);
+	border: 1px solid #eee;
+	height: 50px;
+	font-family: Oxygen;
+	text-align: center;
+	vertical-align: middle;
+ }
+
+.pagecontent section.mydetails-ws {
+	background-color: #FFF;
+	float: right;
+	width: 75.8929%;
+	font-weight: normal;
+ }
+
+	.pagecontent section.mydetails-ws h3.myDetailsSchedule {
+		font-size: 30px;
+		color: #f4a22c;
+		padding: 20px 0 20px 70px;
+		background: url("../img/manage-staff.png") no-repeat;
+		background-position: 2.82353% 50%;
+		background-size: 30px 30px;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		font-weight: 300;
+	 }
+
+table.work-schedule {margin-top: 70px;}
+
+	table.work-schedule tr th {
+		color: rgba(0, 0, 0, 0.33);
+		border: 1px solid #eee;
+		padding-top: 17px;
+		padding-left: 14px;
+		color: rgba(0, 0, 0, 0.33);
+		font: 400 14px / 14px Oxygen;
+	 }
+
+
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(1) {
+    width: 168px !important;
+	height: 55px;
+  
+ }
+
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(2) {width: 89px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(3) {width: 68px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(4) {width: 67px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(5) {width: 68px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(6) {width: 68px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(7) {width: 87px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(8) {width: 89px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(9) {width: 56px;}
+
+#tableManageStaff > div > div > table > tbody > tr.TablesWorkDeatails > th:nth-child(10) {width: 56px;}
+
+table.work-schedule tr > td:first-child {
+	text-align: inherit;
+	padding-left: 15px;
+ }
+
+.AddNewValueInTable {
+	border-radius: 5px;
+	background-color: rgba(112, 36, 18, 0.8);
+	width: 119px;
+	height: 39px;
+	color: #ffffff;
+	font: 600 18px / 18px OpenSans;
+	margin-top: 20px;
+	margin-bottom: 276px;
+ }
+
+.edit {
+	position: absolute;
+	top: 26%;
+	left: 22%;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background: url(../img/stylus.png) no-repeat center;
+	cursor: pointer;
+ }
+
+.pos__rel {
+	position: relative;
+	height: 30px;
+ }
+
+.deleteIcon {
+	position: absolute;
+	top: 26%;
+	left: 24%;
+	display: inline-block;
+	width: 22px;
+	height: 21px;
+	background: url(../img/cross-ico.png) no-repeat center;
+	cursor: pointer;
+ }
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Manage staff</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/payroll.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+
+<div id="theme-wrapper">
+
+<header class="navbar navbar__cur" id="header-navbar">
+<div class="container">
+<a href="index.html" id="logo" class="navbar-brand">
+<img src="img/main-logo.png" alt="" class="normal-logo logo-white logo-img__cur">
+</a>
+<div class="clearfix">
+
+        <div class="nav-no-collapse pull-right" id="header-nav">
+            <ul class="nav navbar-nav pull-right">
+
+<li class="dropdown profile-dropdown">
+<a href="#" class="dropdown-toggle arrow_link__cur" data-toggle="dropdown">
+<img src="img/login-image.png" alt="">
+<span class="hidden-xs dropdown__cur">username</span> <b class="caret caret__cur"></b>
+</a> </li>
+</ul>
+        </div>
+</div>
+</div>
+</header>
+
+
+
+
+<div class="row">
+<div class="col-md-3">
+<div id="nav-col">
+<div class="nav-side-menu">
+   
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+              <li class="text-center first-li-in">
+                  <form action="" class="new-form">
+                      <select class="new-select">
+                          <option value="1">company name</option>
+                          <option value="2">company name</option>
+                          <option value="3">company name</option>
+                          <option value="4">company name</option>
+                          <option value="5">company name</option>
+                      </select>
+                  </form>
+              </li>
+              
+              <li class="home-logo main-list">
+               <span class="home-logo"></span>
+               <a href="#">HOME</a>
+              </li>
+                
+
+                <li  data-toggle="collapse" data-target="#ManageStaff" class="collapsed  mng-stf main-list"><span class="mng-stf"></span>
+                  <a href="#">MANAGER STAFF</a>
+                </li>
+                <ul class="sub-menu collapse" id="ManageStaff">
+                    <li ><a href="#">scheduling</a></li>
+                    <li class="active"><a href="#">payroll</a></li>
+                    <li><a href="#">staff details</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#HireStaff" class="collapsed hire-stf main-list"><span class="hire-stf"></span>
+                  <a href="#">HIRE STAFF</a>
+                </li>  
+                <ul class="sub-menu collapse" id="HireStaff">
+                    <li><a href="#" >hourly wage staff(part-time</a></li>
+                    <li><a href="#" >monthly wage staff(full-time</a></li>
+                    <li><a href="#" >message</a></li>
+                </ul>
+
+               
+                <li data-toggle="collapse" data-target="#companyname" class="collapsed cmpn-det main-list"><span class="cmpn-det"></span>
+                  <a href="#">COMPANYNAME
+                              DETAILS </a>
+                </li>  
+                <ul class="sub-menu collapse" id="companyname">
+                    <li><a href="#" >common calendar</a></li>
+                    <li><a href="#" >announcement</a></li>
+                </ul>
+                
+                
+                <li data-toggle="collapse" data-target="#myDetails" class="collapsed my-dtls main-list"><span class="my-dtls"></span>
+                    <a href="#">MY DETAILS</a>
+                </li>  
+                <ul class="sub-menu collapse" id="myDetails">
+                    <li><a href="#" >my profile</a></li>
+                    <li><a href="#" >work schedule</a>/li>
+                    <li><a href="#" >my jobs</a></li>
+                    <li><a href="#" >messages</a></li>
+                </ul>
+                
+                
+                 <li data-toggle="collapse" data-target="#admin-btn" class="collapsed adm-logo main-list"><span class="adm-logo"></span>
+                  <a href="#">ADMIN</a>
+                </li>  
+                <ul class="sub-menu collapse" id="admin-btn">
+                    <li><a href="#" >user permissions</a></li>
+                    <li><a href="#" >report to work settings</a></li>
+                    <li><a href="#" >company settings</a></li>
+                    <li><a href="#" >SMS</a></li>
+                </ul>
+                
+                
+            </ul>
+     </div>
+</div><!-- enf of class nav-side menu -->
+</div>
+</div>
+
+<div class="col-md-9">
+<div id="content-wrapper  visible-md-*">
+
+<div class="panel panel-default panel-emp main">
+    
+<div class="panel-heading panel-heading-emp"><span class="logo-background"></span>
+    <p class="heading-logo-text">manage staff  |  payroll</p>
+</div>
+  
+<div class="panel-body">
+
+    <form class="emp-top-form">
+		
+		<label for date1 class="label-emp">date from</label>
+		
+		<input type="text" class="rect text-center " placeholder="dd/mm/yy" value="" name="date" title="From" id="date1">
+		<input type="image" name="date" src="img/calend-logo.png" />
+		
+    <label for date2 class="label-emp-to">to</label>
+    <input type="text" class="rect text-center" placeholder="dd/mm/yy" value="" name="date2" title="to" id="date2">
+    <input type="image" name="date" src="img/calend-logo.png" />
+    
+    </form>
+ 
+  <form class="emp-form">
+ 	 
+    <label for emp class="label-emp1">employee</label>
+    <input type="text" class="rect rect2" placeholder="" value="" name="date2" title="to" id="emp">
+    <input type="image" name="submit" src="img/emp-logo.png" />
+  	
+  </form>
+</div><!-- end of panel body -->
+  <!-- Table -->
+  <div class="table-responsive">
+  <table class="table table-bordered table-striped text-center table-hover table-emp">
+         <tr class="text-center">
+        <th class="first-cell-table">employees's<br> name</td>
+        <th>hourly or monthly</td>
+        <th>pay</td>
+        <th>extra payment</th>
+        <th>date</th>
+        <th>start time</th>
+        <th>end time</th>
+        <th>totals hrs</th>
+        <th>total pay</th>
+        <th>description</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>Ronald McDonald</td>
+        <td>hourly</td>
+        <td>$12/hr</td>
+        <td>$150</td>
+        <td>11.12.14</td>
+        <td>15:30</td>
+        <td>17:30</td>
+        <td>9.5</td>
+        <td>$950</td>
+        <td></td>
+        <td class="pos__rel"><a href="" class="stylus-ico"></a></td>
+        <td class="pos__rel"><a href="" class="cross-ico"></a></td>
+    </tr>
+    <tr class="active">
+        <td>Ronald McDonald</td>
+        <td>hourly</td>
+        <td>$12/hr</td>
+        <td>$150</td>
+        <td>11.12.14</td>
+        <td>15:30</td>
+        <td>17:30</td>
+        <td>9.5</td>
+        <td>$950</td>
+        <td></td>
+        <td class="pos__rel"><a href="" class="stylus-ico"></a></td>
+        <td class="pos__rel"><a href="" class="cross-ico"></a></td>
+    </tr>
+    <tr>
+        <td>David Longnamen...</td>
+        <td>hourly</td>
+        <td>$12/hr</td>
+        <td>$150</td>
+        <td>11.12.14</td>
+        <td>15:30</td>
+        <td>17:30</td>
+        <td>9.5</td>
+        <td>$950</td>
+        <td></td>
+        <td class="pos__rel"><a href="" class="stylus-ico"></a></td>
+        <td class="pos__rel"><a href="" class="cross-ico"></a></td>
+    </tr>
+    <tr>
+        <td>Ronald McDonald</td>
+        <td>hourly</td>
+        <td>$12/hr</td>
+        <td>$150</td>
+        <td>11.12.14</td>
+        <td>15:30</td>
+        <td>17:30</td>
+        <td>9.5</td>
+        <td>$950</td>
+        <td></td>
+        <td class="pos__rel"><a href="" class="stylus-ico"></a></td>
+        <td class="pos__rel"><a href="" class="cross-ico"></a></td>
+    </tr>
+    <tr>
+        <td>David Longnamen...</td>
+        <td>hourly</td>
+        <td>$12/hr</td>
+        <td>$150</td>
+        <td>11.12.14</td>
+        <td>15:30</td>
+        <td>17:30</td>
+        <td>9.5</td>
+        <td>$950</td>
+        <td></td>
+        <td class="pos__rel"><a href="" class="stylus-ico"></a></td>
+        <td class="pos__rel"><a href="" class="cross-ico"></a></td>
+    </tr>
+  </table>
+  </div><!--end of table-responsive -->
+   
+<div class=" panel-footer-emp">
+     <button type="button" class="btn btn-default btn-payment text-center">add new staff payment</button>
+     <button type="button" class="btn btn-default btn-exp text-center">export</button>
+</div>
+
+
+</div><!-- end of main -->
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div><!-- end of #theme-wrapper -->
+
+<script type="text/javascript"></script>
+</body>
+</html>

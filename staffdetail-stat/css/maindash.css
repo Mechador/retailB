@@ -1,0 +1,153 @@
+.row__fix {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.pagecontent section.managestaff {
+    margin-bottom: 10px;
+}
+
+.head-paragraph {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+}
+
+.round-graph-canvas {
+    padding: 0;
+    position: relative;
+    border-left: 1px solid #eee;
+}
+
+.pagecontent section.hirestaff {
+background-color: #fff;
+float: right;
+width: 75.89286%;
+font-weight: normal;
+}
+
+.pagecontent section.hirestaff h3.hirestaff {
+font-size: 30px;
+color: #f4a22c;
+padding: 20px 0 20px 70px;
+background: url(../img/hirestaff-active.png) no-repeat;
+background-position: 2.82353% 50%;
+background-size: 30px 19px;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+font-weight: 300;
+}
+
+.pagecontent section.hirestaff {
+    margin-bottom: 10px;
+}
+
+.post_jobs {
+    width: 129px;
+    height: 39px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    left: 35%;
+    border-radius: 5px;
+    margin-bottom: 37px;
+    outline: none;
+}
+
+.post_jobs:hover {
+    width: 129px;
+    height: 39px;
+    background-color: rgba(189, 122, 27, 0.5);
+    color: #ffffff;
+    outline: none;
+}
+
+.pagecontent section.mydetails {
+background-color: #fff;
+float: right;
+width: 75.89286%;
+font-weight: normal;
+margin-bottom: 20px;
+}
+
+.pagecontent section.mydetails h3.mydetails {
+font-size: 30px;
+color: #f4a22c;
+padding: 20px 0 20px 70px;
+background: url(../img/mydetails-active.png) no-repeat;
+background-position: 2.82353% 50%;
+background-size: 25px 25px;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+font-weight: 300;
+}
+
+.mydetails-text {
+    color: rgba(0, 0, 0, 0.7);
+    font: 700 14px / 24px Oxygen;
+    padding-left: 28px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #eee;
+        
+}
+
+.month-salary {
+    color: #f4a22c;
+    font-weight: 600;
+    font-size: 48px;
+    
+    background: url(../img/month-salary.png) no-repeat left;
+     background-size: 52px 45px;
+   background-position: 8.82353% 55%;
+    padding: 25px 0 15px 106px
+}
+
+.next-pay {
+    color: #f4a22c;
+    font-weight: 600;
+    font-size: 48px;
+    background: url(../img/next-pay.png) no-repeat left;
+    background-size: 52px 45px;
+    background-position: 9.82353% 58%;
+    padding: 26px 0 20px 111px;
+}
+
+.header-mydetails-font {
+    padding-left: 28px;
+}
+
+.border-right {
+    border-right: 1px solid #eee;
+}
+
+#table_details {
+    margin-bottom: 0;
+}
+
+.db__heading {
+    position: relative;
+}
+
+.section__btn {
+position: absolute;
+width: 71px;
+height: 71px;
+background: url(../img/arrow-down-section.png) no-repeat center center;
+background-size: 12px 7px;
+left: 92%;
+top: 2%;
+border-left: 1px solid #eee;
+outline: none;
+}
+
+.section__btn:hover {
+    background: url(../img/arrow-hover.png) no-repeat center center;
+    background-size: 12px 7px;
+}
+    
